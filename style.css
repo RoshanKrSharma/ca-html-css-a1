@@ -15,7 +15,7 @@
 
 
 .navbar-toggler-icon {
-    background-image: none
+    background-image: none;
     padding: 10px 10px;
   }
   .navbar-toggler-icon::before {
