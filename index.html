@@ -4,25 +4,581 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cogoport - Book & Manage Shipments & Cargo Online</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Cogoport - Book & Manage Shipments & Cargo Online</title>
 </head>
 <body>
-    <div class="upperPortion">
-<a href=""><svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="200.000000pt" height="200.000000pt" viewBox="0 0 200.000000 200.000000" preserveAspectRatio="xMidYMid meet">
+    <div id="page">
+        <div class="head">
 
-    <g transform="translate(0.000000,200.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none">
-    <path d="M1630 1020 c0 -91 3 -110 15 -110 12 0 15 14 15 70 l0 70 40 0 c29 0 40 4 40 15 0 8 -4 16 -10 16 -5 1 -14 3 -20 4 -5 1 -19 3 -30 4 -13 1 -20 8 -20 21 0 11 -7 20 -15 20 -12 0 -15 -19 -15 -110z"/>
-    <path d="M255 1090 c-31 -12 -59 -71 -51 -104 17 -68 97 -99 147 -56 33 27 9 45 -31 22 -25 -15 -30 -15 -54 1 -19 13 -26 26 -26 50 0 18 5 38 12 45 15 15 70 16 85 1 12 -12 33 -4 33 11 0 13 -54 40 -77 39 -10 0 -27 -4 -38 -9z"/>
-    <path d="M428 1071 c-93 -83 26 -215 121 -135 43 36 44 93 2 135 -39 38 -80 39 -123 0z m108 -36 c34 -52 -17 -110 -74 -83 -30 15 -42 68 -21 94 20 24 76 18 95 -11z"/>
-    <path d="M638 1071 c-25 -22 -32 -36 -32 -66 0 -90 135 -130 172 -51 19 40 22 58 11 78 -8 15 -7 24 6 38 19 21 2 39 -20 20 -10 -8 -19 -8 -34 -1 -34 18 -69 12 -103 -18z m106 -27 c34 -33 4 -104 -44 -104 -27 0 -60 35 -60 64 0 33 25 56 60 56 16 0 36 -7 44 -16z"/>
-    <path d="M874 1090 c-31 -12 -54 -49 -54 -88 0 -72 93 -118 146 -74 53 45 54 103 2 147 -30 26 -57 30 -94 15z m86 -49 c38 -71 -38 -131 -95 -75 -20 20 -19 53 2 76 22 25 79 24 93 -1z"/>
-    <path d="M1073 1080 c-18 -11 -35 -30 -38 -42 -10 -41 -1 -171 13 -176 8 -2 12 7 12 28 0 30 1 31 35 24 51 -9 83 2 105 39 34 55 20 107 -37 136 -31 16 -53 14 -90 -9z m95 -32 c21 -21 15 -76 -11 -93 -55 -35 -118 27 -82 81 17 27 71 34 93 12z"/>
-    <path d="M1288 1083 c-55 -34 -60 -100 -12 -148 72 -72 192 25 144 116 -12 22 -61 49 -87 49 -10 0 -30 -8 -45 -17z m98 -48 c22 -34 12 -69 -26 -85 -43 -18 -80 7 -80 53 0 42 15 57 57 57 24 0 37 -7 49 -25z"/>
-    <path d="M1515 1088 c-43 -25 -55 -49 -55 -115 0 -47 4 -63 14 -63 9 0 15 18 18 59 5 71 19 91 64 91 36 0 54 17 33 31 -19 12 -50 11 -74 -3z"/>
-    <path d="M610 886 c0 -43 123 -63 160 -26 18 18 27 40 16 40 -2 0 -17 -7 -32 -15 -16 -8 -40 -15 -54 -15 -14 0 -38 7 -54 15 -35 18 -36 18 -36 1z"/>
-    </g>
-    </svg></a>
+            <div class="header">
+
+                <nav class="navbar navbar-expand-lg navbar-light bg-light" id="TopHead">
+                    <a class="navbar-brand" href="#"><img src="images/logo.svg"></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                  
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                      <ul class="navbar-nav ml-auto">
+                          <li class="nav-item-dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Products
+                          </a>
+                          </li>
+
+                          <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Partners
+                            </a>
+                          
+                          </li>
+
+                          <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Company
+                            </a>
+                          
+                          </li>
+
+                          <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Knowledge Center
+                            </a>
+                          
+                          </li>
+
+                          <li class="nav-item">
+                            <a class="nav-link" href="#" id="navbarDropdown">Contact Us</a>
+                          </li>
+                          
+                          <!-- <li class="nav-item">
+                              <a class="nav-link disabled" href="#">Disabled</a>
+                            </li> -->
+                        </ul>
+                        <ul class="navbar-nav ml-auto">
+                            <li class="auth_login"><img src="images/smile.svg"/><a href="#">login</a></li>
+                            <li class="auth_signup"><button type="button">Sign Up</button></li>
+                      </ul>
+                      
+                    </div>
+                  </nav>
+                </div>
+            <!-- <div class="bar">
+                <nav class="navbar">
+                    <div class="logo"><img src="images/logo.svg"/></div>
+                    <ul>
+                    <li><a href="#">Products<img src="images/downarrow.svg"/></a></li>
+                    <li><a href="#">Partners<img src="images/downarrow.svg"/></a></li>
+                    <li><a href="#">Company<img src="images/downarrow.svg"/></a></li>
+                    <li><a href="#">Knowledge Center<img src="images/downarrow.svg"/></a></li>
+                    <li><a href="#">Contact us</a></li>
+                </ul>
+                
+                <div class="auth">
+                    <ul>
+                        <li class="auth_login"><img src="images/smile.svg"/><a href="#">Login</a></li>
+                        <li class="auth_signup"><button type="button">Sign Up</button></li>
+                    </ul>
+                </div> -->
+                <!-- </nav>
+            </div> -->
+            <div class="second-batch">
+                <div id="motto">
+                    <div class="headings">
+                        <h1>Grow Faster, Go Global.</h1>
+                        <p>Strengthen your Supply Chain, and Scale your Business
+                            with Reliable Shipping and Cashflows.</p>
+                        <button>Get Started</button>
+                    </div>
+                </div>
+                <div class="banner-image">
+                    <img src="https://cdn.cogoport.io/cms-prod/vault/original/home-banner-image1.webp"/>
+                </div>
+            </div>
+        </div>
+        <div class="second-parent-div">
+            
+        <div class="places-served">
+            <div class="countries">
+                <h1>149+</h1>
+                <p>Countries Served</p>
+            </div>
+            <div class="ports-pairs">
+                <h1>8,000</h1>
+                <p>Ports Pairs Served</p>
+            </div>
+            <div class="air-cargo">
+                <h1>2,500</h1>
+                <p>Tons of Air Cargo Moved</p>
+            </div>
+            <div class="teu-sold">
+                <h1>500,000</h1>
+                <p>Containers moved</p>
+            </div>
+        </div>
+        <div class="supply-chain">
+            <div class="supply-chain-heading">
+                <h1>One Stop Solution for Your Supply Chain</h1>
+                <p>Connected Shipping, Finance, and Trade-tech, to Power Global Trade and Supply Chains.</p>
+            </div>
+            <div class="map-supply">
+                <img src="https://cdn.cogoport.io/cms-prod/vault/original/map-supply-chain.png"/>
+            </div>
+        </div>
+        <div class="products-head">
+            <h1>Our Products</h1>
+        </div>
+
+        <div class="cross-border">
+            <h1>End to End Cross Border Logistics</h1>
+            <div class="cross-border-items">
+                <a href="#">
+                    <img src="images/ship.svg"/>
+                    <h4>Ocean: FCL</h4>
+                    <div class="find-out-more">
+                        <span class="find-tag-span">Find Out More</span>
+                        <img src="images/rightarrow.svg"/>
+                    </div>
+                </a>
+            </div>
+            <div class="cross-border-items">
+                <a href="#">
+                    <img src="images/ship.svg"/>
+                    <h4>Ocean: LCL</h4>
+                    <div class="find-out-more">
+                        <span class="find-tag-span">Find Out More</span>
+                        <img src="images/rightarrow.svg"/>
+                    </div>
+                </a>
+            </div>
+            <div class="cross-border-items">
+                <a href="#">
+                    <img src="images/air.svg"/>
+                    <h4>International Air</h4>
+                    <div class="find-out-more">
+                        <span class="find-tag-span">Find Out More</span>
+                        <img src="images/rightarrow.svg"/>
+                    </div>
+                </a>
+            </div>
+            <div class="cross-border-items">
+                <a href="#">
+                    <img src="images/customs.svg"/>
+                    <h4>Customs, CFS, & Handling</h4>
+                    <div class="find-out-more">
+                        <span class="find-tag-span">Find Out More</span>
+                        <img src="images/rightarrow.svg"/>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="cross-border-2">
+            <h1>Domestic Logistics</h1>
+            <div class="cross-border-items">
+                <a href="#">
+                    <img src="images/airplane.svg"/>
+                    <h4>FTL, PTL</h4>
+                    <div class="find-out-more">
+                        <span class="find-tag-span">products.find</span>
+                        <img src="images/rightarrow.svg"/>
+                    </div>
+                </a>
+            </div>
+            <div class="cross-border-items">
+                <a href="#">
+                    <img src="images/train.svg"/>
+                    <h4>Trailer & Rail Container</h4>
+                    <div class="find-out-more">
+                        <span class="find-tag-span">products.find</span>
+                        <img src="images/rightarrow.svg"/>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="cross-border-3">
+            <h1>Supply Chain Solutions</h1>
+            <div class="cross-border-items">
+                <a href="#">
+                    <img src="images/cogoassured.svg"/>
+                    <h4>CogoAssured</h4>
+                    <div class="find-out-more">
+                        <span class="find-tag-span">Find Out More</span>
+                        <img src="images/rightarrow.svg"/>
+                    </div>
+                </a>
+            </div>
+            <div class="cross-border-items">
+                <a href="#">
+                    <img src="images/cart.svg"/>
+                    <h4>Domestic Fulfilment</h4>
+                    <div class="find-out-more">
+                        <span class="find-tag-span">Find Out More</span>
+                        <img src="images/rightarrow.svg"/>
+                    </div>
+                </a>
+            </div>
+            <div class="cross-border-items">
+                <a href="#">
+                    <img src="images/doordoorshipents.svg"/>
+                    <h4>Door to Door Shipments</h4>
+                    <div class="find-out-more">
+                        <span class="find-tag-span">Find Out More</span>
+                        <img src="images/rightarrow.svg"/>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="cross-border-4">
+            <h1>Financial Services</h1>
+            <div class="cross-border-items">
+                <a href="#">
+                    <img src="images/paylater.svg"/>
+                    <h4>Pay Later</h4>
+                    <div class="find-out-more">
+                        <span class="find-tag-span">Find Out More</span>
+                        <img src="images/rightarrow.svg"/>
+                    </div>
+                </a>
+            </div>
+            <div class="cross-border-items">
+                <a href="#">
+                    <img src="images/export.svg"/>
+                    <h4>Export Factoring</h4>
+                    <div class="find-out-more">
+                        <span class="find-tag-span">Find Out More</span>
+                        <img src="images/rightarrow.svg"/>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        </div>
+        <div class="third-part">
+            <div class="tag-3">
+                <h1>Trusted by</h1>
+            </div>
+
+            <div class="marque-images">
+                <ul>
+                    <li><img src="https://cdn.cogoport.io/cms-prod/vault/original/tvs-logo-1.webp"/></li>
+                    <li><img src="https://cdn.cogoport.io/cms-prod/vault/original/voltas-logo-1.webp"/></li>
+                    <li><img src="https://cdn.cogoport.io/cms-prod/vault/original/jsw-logo-new.webp"/></li>
+                    <li><img src="https://cdn.cogoport.io/cms-prod/vault/original/bombay-dyeing-logo-1.webp"/></li>
+                    <li><img src="https://cdn.cogoport.io/cms-prod/vault/original/air-asia-logo-1.webp"/></li>
+                    <li><img src="https://cdn.cogoport.io/cms-prod/vault/original/ais-logo-1.webp"/></li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="next-level-supply">
+            <div class="heading-next">
+                <h1>Ready to take your Supply Chain to the Next Level?</h1>
+                <button>Get Started<img src="images/right.svg"/></button>
+            </div>
+        </div>
+        <div class="working">
+            <div class="working-heading-h1"><h1>How it Works</h1></div>
+            <div class="working-heading">
+                <div class="working-heading-titles-1"><h4>For Cargo Owners</h4></div>
+                <div class="working-heading-titles-2"><h4>For Logistics Parts</h4></div>
+            </div>
+            <div class="working-2">
+                <div class="step12">
+                    
+                    <div class="steps-1-2">
+                        <p>Stage 1</p>
+                        <div class="tag1">
+                            <img src="images/discover.svg"/>
+                            <div class="tag1-child">Discover</div>
+                        </div>
+                        <ul>
+                            <li>Spot and Contract Rates for Logistics</li>
+                            <li>Service details, Trade Compliance/ Regulatory Requirements</li>
+                            <li>Knowledge and Insights on Trade, Logistics, Finance, Supply Chains</li>
+                        </ul>
+                    </div>
+                    <div class="steps-1-2">
+                        <p>Stage 2</p>
+                        <div class="tag1">
+                            <img src="images/plannbook.svg"/>
+                            <div class="tag1-child">Plan & Book</div>
+                        </div>
+                        <ul>
+                            <li>Route, Service Schedules, Inventory, and Cashflow planning</li>
+                            <li>Book with upfront visibility of service terms and inclusions </li>    
+                        </ul>
+                    </div>
+                </div>
+                <div class="computer-img">
+                    <img src="https://cdn.cogoport.io/cms-prod/vault/original/homepagem1.png"/>
+                </div>
+                <div class="step34">
+                    <div class="steps-3-4">
+                        <p>Stage 2</p>
+                        <div class="tag1">
+                            <img src="images/execute.svg"/>
+                            <div class="tag1-child">Execute</div>
+                        </div>
+                        <ul>
+                            <li>Ocean and Air Cargo Tracking</li>
+                            <li>Documentation and Filings, Handled</li>
+                            <li>Multi-modal: Smooth coordination and handovers between various service providers and stakeholders</li>    
+                        </ul>
+                    </div>
+                    <div class="steps-3-4">
+                        <p>Stage 2</p>
+                        <div class="tag1">
+                            <img src="images/export.svg" width="35px"/>
+                            <div class="tag1-child">Finance</div>
+                        </div>
+                        <ul>
+                            <li>Deferred payment on Logistics with PayLater</li>
+                            <li>Trade Finance for your Cargo with Export Factoring</li>    
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="industries-tags">
+            <div class="industries-tags-titles">
+                
+            <h1>Industries Served</h1>
+            </div>
+            <div class="industries">
+                <div class="ind-1">
+                    <img src="https://www.cogoport.com/images/chemical.svg"/>
+                </div>
+                <div class="ind-1">
+                    <img src="https://www.cogoport.com/images/paracetamol.svg"/>
+                </div>
+                <div class="ind-1">
+                    <img src="https://www.cogoport.com/images/electronics.svg"/>
+                </div>
+                <div class="ind-4">
+                    <img src="https://www.cogoport.com/images/whitegoods.svg"/>
+                </div>
+                <div class="ind-5">
+                    <img src="https://www.cogoport.com/images/textiles.svg"/>
+                </div>
+                <div class="ind-1">
+                    <img src="https://www.cogoport.com/images/manufactoring.svg"/>
+                </div>
+                <div class="ind-1">
+                    <img src="https://www.cogoport.com/images/agriculture.svg"/>
+                </div>
+            </div>
+        </div>
+        <div class="get-started">
+            <div class="get-started-tag">
+                <p class="get-started-p1">Get Started Today</h1>
+                <p class="get-started-p2">Plan, Book and Finance your shipment in one place.</p>
+                <p class="get-started-p2">Experience how Cogoport’s Global Trade Platform can Turbocharge your Business.</p>
+                <button>Get Started</button>
+            </div>
+            <div class="get-started-image">
+                <img src="https://cdn.cogoport.io/cms-prod/vault/original/trade-tech-home-1.webp"/>
+            </div>
+        </div>
+
+
+        <!-- check this -->
+        <div class="grow-faster">
+            <div class="video-thumbnail">
+                <img src="https://cdn.cogoport.io/cms-prod/vault/original/homepage_thumbnail.png"/>
+                <div class="play-pause">
+                    <!-- <img src="https://cdn.cogoport.io/cms-prod/vault/original/play-button-white.png" alt=""> -->
+                </div>
+            </div>
+        </div>
+
+
+        <div class="grow-faster-2">
+            <div class="heading-grow-2">
+                <h1>Grow Faster with Cogoport</h1>
+                <p>Know more about Cogoport’s Global Trade Platform</p>
+            </div>
+            <button>Know More<img src="images/right.svg"/></button>
+        </div>
+
+        <div class="blogs">
+            <div class="blogs-heading">
+                <h1>Blogs</h1>
+            </div>
+            <div class="blogs-3">
+                <div class="blogs-div">
+                    <img class="blogs-div-img" src="https://uploads-ssl.webflow.com/5e57ba59552cf400c593fd16/63aeb89bb337a60f4bf5d90b_2022-23.jpg">
+                    <h4>Industry Trends</h4>
+                    <h3>2022: Year in Review</h3>
+                    <p>Since mid-2021, issues with semiconductor chip availability have limited the production of a variety of electronic and automobile items.</p>
+                    <div class="blogs-read-more">
+                        <div class="blogs-read-arr">
+                            <p>Read More<img src="images/rightarrow.svg"></p>
+                            <p>30 DECEMBER 2022</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="blogs-div">
+                    <img class="blogs-div-img" src="https://uploads-ssl.webflow.com/5e57ba59552cf400c593fd16/63ac3bf741b0cab64ff2c6c7_Bullwhip%20Blog.jpg">
+                    <h4>Industry Trends</h4>
+                    <h3>2022: Year in Review</h3>
+                    <p>Since mid-2021, issues with semiconductor chip availability have limited the production of a variety of electronic and automobile items.</p>
+                    <div class="blogs-read-more">
+                        <div class="blogs-read-arr">
+                            <p>Read More<img src="images/rightarrow.svg"></p>
+                            <p>30 DECEMBER 2022</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="blogs-div">
+                    <img class="blogs-div-img" src="https://uploads-ssl.webflow.com/5e57ba59552cf400c593fd16/63a548a7853f9043ed4eee4d_v5switch-bill-of-Lading.jpg">
+                    <h4>Industry Trends</h4>
+                    <h3>2022: Year in Review</h3>
+                    <p>Since mid-2021, issues with semiconductor chip availability have limited the production of a variety of electronic and automobile items.</p>
+                    <div class="blogs-read-more">
+                        <div class="blogs-read-arr">
+                            <p>Read More<img src="images/rightarrow.svg"></p>
+                            <p>30 DECEMBER 2022</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="view-all">
+            <button>View All</button>
+        </div>
+
+        <div class="subscribe">
+            <div class="subs-img-email">
+                <img src="https://cdn.cogoport.io/cms-prod/vault/original/cogoport-subscribe.png">
+                <div class="subs-email">
+                    <h1>Subscribe to our newsletter now!</h1>
+                    <h5>Don’t miss out on the latest happenings at Cogoport.</h5>
+                    <div class="subs-email-send">
+                        <input placeholder="Enter your email here" >
+                        <button>Subscribe<img class="img-subs-inside" src="images/rightarrow2white.svg"></button>
+                    </div>
+                </div>
+            </div>
+            <div class="subs-part-2">
+                <div class="subs-2-heading">
+                    <div><div class="subs-1-a"><u>Products</u></div></div>
+                    <div><a href="#" class="subs-2-a">Global Trade Platform</a></div>
+                    <div><div class="subs-1-a"><b>Cross-border Logistic</b></div></div>
+                    <div><a href="#" class="subs-2-a">Ocean: FCL</a></div>
+                    <div><a href="#" class="subs-2-a">Ocean: FCL</a></div>
+                    <div><a href="#" class="subs-2-a">Ocean: FCL</a></div>
+                    <div><a href="#" class="subs-2-a">Customs, CFS, and Handling</a></div>
+                    <div><div class="subs-1-a"><b>Domestic Logistics</b></div></div>
+                    <div><a href="#" class="subs-2-a">Ocean: FCL</a></div>
+                    <div><a href="#" class="subs-2-a">Trailer & Rail Container Haulage</a></div>
+                </div>
+                <div class="subs-2-heading">
+                    <div><a class="subs-1-a" style="opacity: 0;">d</a></div>
+                    <div><a href="#" class="subs-2-a">Global Trade Platform</a></div>
+                    <div><div class="subs-1-a"><b>Cross-border Logistic</b></div></div>
+                    <div><a href="#" class="subs-2-a">Ocean: FCL</a></div>
+                    <div><a href="#" class="subs-2-a">Ocean: FCL</a></div>
+                    <div><a href="#" class="subs-2-a">Ocean: FCL</a></div>
+                    <div><a href="#" class="subs-2-a">Customs, CFS, and Handling</a></div>
+                    <div><div class="subs-1-a"><b>Domestic Logistics</b></div></div>
+                    <div><a href="#" class="subs-2-a">Ocean: FCL</a></div>
+                    <div><a href="#" class="subs-2-a">Trailer & Rail Container Haulage</a></div>
+                </div>
+                <div class="subs-2-heading">
+                    <div><div class="subs-1-a"><u>Products</u></div></div>
+                    <div><a href="#" class="subs-2-a">Global Trade Platform</a></div>
+                    <div><div class="subs-1-a"><b>Cross-border Logistic</b></div></div>
+                    <div><a href="#" class="subs-2-a">Ocean: FCL</a></div>
+                    <div><a href="#" class="subs-2-a">Ocean: FCL</a></div>
+                    <div><a href="#" class="subs-2-a">Ocean: FCL</a></div>
+                    <div><a href="#" class="subs-2-a">Customs, CFS, and Handling</a></div>
+                    <div><div class="subs-1-a"><b>Domestic Logistics</b></div></div>
+                    <div><a href="#" class="subs-2-a">Ocean: FCL</a></div>
+                    <div><a href="#" class="subs-2-a">Trailer & Rail Container Haulage</a></div>
+                </div>
+                <div class="subs-2-heading">
+                    <div><div class="subs-1-a"><u>Products</u></div></div>
+                    <div><a href="#" class="subs-2-a">Global Trade Platform</a></div>
+                    <div><div class="subs-1-a"><b>Cross-border Logistic</b></div></div>
+                    <div><a href="#" class="subs-2-a">Ocean: FCL</a></div>
+                    <div><a href="#" class="subs-2-a">Ocean: FCL</a></div>
+                    <div><a href="#" class="subs-2-a">Ocean: FCL</a></div>
+                    <div><a href="#" class="subs-2-a">Customs, CFS, and Handling</a></div>
+                    <div><div class="subs-1-a"><b>Domestic Logistics</b></div></div>
+                    <div><a href="#" class="subs-2-a">Ocean: FCL</a></div>
+                    <div><a href="#" class="subs-2-a">Trailer & Rail Container Haulage</a></div>
+                </div>
+                <div class="subs-2-heading">
+                    <div><div class="subs-1-a"><u>Knowledge Center</u></div></div>
+                    <div><a href="#" class="subs-2-a">Global Trade Platform</a></div>
+                    <div><div class="subs-1-a"><b>Cross-border Logistic</b></div></div>
+                    <div><a href="#" class="subs-2-a">Ocean: FCL</a></div>
+                    <div><a href="#" class="subs-2-a">Ocean: FCL</a></div>
+                    <div><a href="#" class="subs-2-a">Ocean: FCL</a></div>
+                    <div><a href="#" class="subs-2-a">Customs, CFS, and Handling</a></div>
+                    <div><div class="subs-1-a"><b>Domestic Logistics</b></div></div>
+                    <div><a href="#" class="subs-2-a">Ocean: FCL</a></div>
+                    <div><a href="#" class="subs-2-a">Trailer & Rail Container Haulage</a></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="last-part">
+            <div class="last-parent">
+                <div class="last-1">
+                    <a href="#">Jawaharlal Nehru (Nhava Sheva) to Jebel Ali</a>
+                    <a href="#">Mundra to Jebel Ali</a>
+                    <a href="#">Jawaharlal Nehru (Nhava Sheva) to Jebel Ali</a>
+                    <a href="#">Mundra to Jebel Ali</a>
+                    <a href="#">Jawaharlal Nehru (Nhava Sheva) to Jebel Ali</a>
+                    <a href="#">Mundra to Jebel Ali</a>
+                    <a href="#">Mundra to Dar es Salaam</a>
+                </div>
+                <div class="last-1">
+                    <a href="#">Jawaharlal Nehru (Nhava Sheva) to Jebel Ali</a>
+                    <a href="#">Mundra to Jebel Ali</a>
+                    <a href="#">Jawaharlal Nehru (Nhava Sheva) to Jebel Ali</a>
+                    <a href="#">Mundra to Jebel Ali</a>
+                    <a href="#">Jawaharlal Nehru (Nhava Sheva) to Jebel Ali</a>
+                    <a href="#">Mundra to Jebel Ali</a>
+                    <a href="#">Mundra to Dar es Salaam</a>
+                </div>
+                <div class="last-1">
+                    <a href="#">Chhatrapati Shivaji International Airport - INBOM to Dubai International Airport - AEDXB</a>
+                    <a href="#">Indira Gandhi International Airport - INDEL to Dubai International Airport - AEDXB</a>
+                    <a href="#">Jawaharlal Nehru (Nhava Sheva) to Jebel Ali</a>
+                    <a href="#">Chhatrapati Shivaji International Airport - INBOM to Dubai International Airport - AEDXB</a>
+                    <a href="#">Indira Gandhi International Airport - INDEL to Dubai International Airport - AEDXB</a>
+                    <a href="#">Chhatrapati Shivaji International Airport - INBOM to Dubai International Airport - AEDXB</a>
+                    <a href="#">Indira Gandhi International Airport - INDEL to Dubai International Airport - AEDXB</a>
+                </div>
+            </div>
+            <div class="last-2">
+                <div class="last-2-1">
+                    <p class="rights-last">© 2023 Cogo Universe PTE. All rights reserved.</p>
+                    <p class="tnc"><b>Terms and Conditions | Cookie policy | Privacy and Data Protection Policy</b></p>
+                </div>
+                <div class="last-2-2">
+                    <a href="#"><img src="images/linkedin.svg"></a>
+                    <a href="#"><img src="images/facebook.svg"></a>
+                    <a href="#"><img src="images/instagram.svg"></a>
+                </div>
+            </div>
+        </div>
+
     </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
 </body>
 </html>
