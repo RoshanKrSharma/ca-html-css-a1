@@ -232,14 +232,14 @@ nav ul li a:hover{
 }
 
 
-.cross-border-3{
+.cross-border-three{
     margin-left: 10%;
     display: inline-flex;
     align-items:center;
     justify-content: center;
     margin-top: 2%;
 }
-.cross-border-3 h1{
+.cross-border-three h1{
     width:300px;
     margin-right:50px;
     font-size:24px;
@@ -248,14 +248,14 @@ nav ul li a:hover{
 }
 
 
-.cross-border-4{
+.cross-border-four{
     margin-left: 10%;
     display: inline-flex;
     align-items:center;
     justify-content: center;
     margin-top: 2%;
 }
-.cross-border-4 h1{
+.cross-border-four h1{
     width:300px;
     margin-right:50px;
     font-size:24px;
@@ -313,7 +313,7 @@ nav ul li a:hover{
 }
 
 
-.tag-3{
+.tag-three{
     justify-content: center;
     justify-items: center;
     display: flex;
